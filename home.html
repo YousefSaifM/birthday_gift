@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+	<title>عيد ميلاد سعيد</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+        
+		body {
+			background-color: #222;
+			font-family: Arial, sans-serif;
+			text-align: center;
+
+
+            background-image: url("https://media.giphy.com/media/26tOZ42Mg6pbTUPHW/giphy.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+          
+		}
+
+		
+		h1 {
+			color: #c497fcfa;
+			font-size: 48px;
+			margin-top: 100px;
+		}
+		
+		img {
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			margin-top: 50px;
+		}
+		
+		button {
+			background-color: #ff0000;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			font-size: 24px;
+			margin-top: 50px;
+			cursor: pointer;
+		}
+		
+		button:hover {
+			background-color: #fff;
+			color: #ff0000;
+			border: 2px solid #ff0000;
+		}
+		
+		.emoji {
+			font-size: 72px;
+			margin-top: 50px;
+		}
+		
+		.emoji:hover {
+			cursor: pointer;
+			transform: scale(1.5);
+		}
+		
+		.text {
+            color: #fff;
+			font-size: 34px;
+			margin-top: 50px;
+		}
+	</style>
+    <script>
+       function playGif() {
+            var img = document.createElement('img');
+            img.src = "https://media.giphy.com/media/ex99R7vo7EIg/giphy.gif";
+            document.body.appendChild(img);
+            //("تم تشغيل GIP!");
+        }
+        function playGif2() {
+            var img = document.createElement('img');
+            img.src = "https://media.giphy.com/media/LGBKlgMCKQbkDKcG4t/giphy.gif";
+            document.body.appendChild(img);
+            //("تم تشغيل GIP!");
+        }
+        function playGif3() {
+            var img = document.createElement('img');
+            img.src = "https://media.giphy.com/media/8AdhxLETq6WhyyyxBk/giphy-downsized-large.gif";
+            document.body.appendChild(img);
+            //("تم تشغيل GIP!");
+        }
+    </script>
+</head>
+<body>
+	<h1>Happy birthday Marwa<br>كل عام وأنت بخير </h1>
+	<img src="image1.jpg" alt="لم يتم تحميل الصورة">
+	<button onclick="alert('You are still a child😜')">  ...  </button>
+	<div class="emoji">
+		<span onclick="playGif3()">🎁</span>
+		<span onclick="playGif2()">🎉</span>
+        <span onclick="playGif()">🎂</span>
+	</div>
+	<div class="text">
+		<p >عيد ميلاد سعيد مروى! أتمنى لك السعادة والنجاح في حياتك. 🎉🎂🎁</p>
+	</div>
+    <canvas id="birthday"></canvas>
+
+</body>
+</html>
+
